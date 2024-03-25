@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Fake News Detector</h1>
+        <form action="/predict" method="post">
+            <label for="language">Select Language:</label>
+            <select name="language" id="language">
+                <option value="English">English</option>
+            </select>
+            <input type="text" id="news_title" name="news_title" placeholder="Enter news title">
+            <textarea id="news_content" name="news_content" rows="4" placeholder="Enter news content"></textarea>
+            <button type="submit">Detect</button>
+        </form>
+        {% if detection_result %}
+            <div class="result">
+                <h2>The news is: {{ detection_result }}</h2>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
