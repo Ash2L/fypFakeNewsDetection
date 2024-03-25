@@ -23,5 +23,5 @@ To run the Fake News Detector locally, follow these steps:
 
 If you face unpickling error, it is due to the size of the model being too large and it being incorrectly downloaded/corrupted.
 If this error persist, you can download the model callED "engDetect.pt" from here: https://drive.google.com/drive/folders/1u2eHG85kxHSiVtqxTq7GI3Wkf8TSVkg0?usp=sharing
-You can also download the file from that link
+You can also download the fake news detection file from that link if any error occurs.
 
