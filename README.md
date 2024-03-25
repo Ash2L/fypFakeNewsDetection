@@ -2,10 +2,10 @@
 
 # Fake News Detector
 
-Welcome to the Fake News Detector project! This web application is designed to detect fake news articles and textual contents using machine learning algorithms.
+Welcome to the Fake News Detector project! This web application is designed to detect fake textual contents using machine learning algorithms.
 
 ## Introduction
-The Fake News Detector is a Flask-based web application that utilizes machine learning models to classify news articles as either real or fake. The application provides a simple user interface where users can input the title and content of a news article, and it will predict whether the article is genuine or not.
+The Fake News Detector is a Flask-based web application that utilizes machine learning models to classify news as either real or fake. The application provides a simple user interface where users can input the title and content of a news article, and it will predict whether the article is genuine or not.
 
 ## Features
 - User-friendly interface for submitting news articles
@@ -25,3 +25,4 @@ If you face unpickling error, it is due to the size of the model being too large
 If this error persist, you can download the model callED "engDetect.pt" from here: https://drive.google.com/drive/folders/1u2eHG85kxHSiVtqxTq7GI3Wkf8TSVkg0?usp=sharing
 You can also download the fake news detection file from that link if any error occurs.
 
+Errors may occur due to the fact that Github is unable to accomodate larger files, as such the model was uploaded through lfs that led to certain error and some site-packages were removed as the file size was too large.
